@@ -148,6 +148,12 @@ function App() {
 
   return (
     <div className="app-container">
+      {/* Mobile Sidebar Overlay */}
+      <div
+        className={`sidebar-overlay ${mobileMenuOpen ? 'visible' : ''}`}
+        onClick={() => setMobileMenuOpen(false)}
+      />
+
       {/* Sidebar */}
       <aside className={`sidebar ${mobileMenuOpen ? 'mobile-open' : ''}`}>
         <div className="sidebar-logo">
