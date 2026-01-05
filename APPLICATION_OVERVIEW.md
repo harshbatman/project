@@ -1,4 +1,4 @@
-# LibraryHub - Application Overview
+# eLibrary - Application Overview
 
 ## 🎉 What We've Built
 
@@ -222,7 +222,7 @@ All data is stored in browser's localStorage:
 
 ## 🎊 Success!
 
-Your LibraryHub Book Management System is **fully operational** and ready to use!
+Your eLibrary Book Management System is **fully operational** and ready to use!
 
 Access it at: **http://localhost:5173/**
 

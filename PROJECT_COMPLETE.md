@@ -1,4 +1,4 @@
-# 🎉 LibraryHub - Project Complete!
+# 🎉 eLibrary - Project Complete!
 
 ## ✅ Project Status: **COMPLETE & RUNNING**
 
@@ -19,7 +19,7 @@ The development server is running and ready to use!
 ### Complete Application Structure
 
 ```
-LibraryHub/
+eLibrary/
 ├── 📄 index.html (SEO-optimized HTML with meta tags)
 ├── 📦 package.json (Dependencies configuration)
 ├── ⚙️ vite.config.js (Vite build configuration)
@@ -382,7 +382,7 @@ This project demonstrates:
 
 ## 🎊 Congratulations!
 
-Your **LibraryHub Book Management System** is:
+Your **eLibrary Book Management System** is:
 - ✅ **Complete**
 - ✅ **Running**  
 - ✅ **Ready to use**

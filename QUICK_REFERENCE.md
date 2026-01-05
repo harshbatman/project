@@ -1,4 +1,4 @@
-# LibraryHub - Quick Reference Guide
+# eLibrary - Quick Reference Guide
 
 ## 🚀 Quick Start
 

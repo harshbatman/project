@@ -1,8 +1,8 @@
-# LibraryHub - Book Management System
+# eLibrary - Book Management System
 
 A modern, responsive web application for managing library operations including books, members, and borrowing records.
 
-![LibraryHub](https://img.shields.io/badge/Library-Management-blue)
+![eLibrary](https://img.shields.io/badge/Library-Management-blue)
 ![React](https://img.shields.io/badge/React-18-61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF)
 
@@ -244,4 +244,4 @@ For issues or questions about the library management system, please refer to the
 
 ---
 
-**LibraryHub** - Making library management simple, modern, and efficient. 📚✨
+**eLibrary** - Making library management simple, modern, and efficient. 📚✨

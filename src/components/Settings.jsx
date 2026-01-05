@@ -93,7 +93,7 @@ function Settings({ currentUser, setCurrentUser, showToast }) {
                             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', padding: 'var(--space-md) 0', borderBottom: '1px solid var(--color-border-light)' }}>
                                     <span style={{ fontWeight: 500 }}>Application Name</span>
-                                    <span className="text-secondary">LibraryHub</span>
+                                    <span className="text-secondary">eLibrary</span>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', padding: 'var(--space-md) 0', borderBottom: '1px solid var(--color-border-light)' }}>
                                     <span style={{ fontWeight: 500 }}>Version</span>
