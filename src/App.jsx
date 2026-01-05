@@ -15,11 +15,13 @@ function App() {
   const [books, setBooks] = useState(() => {
     const saved = localStorage.getItem('books');
     return saved ? JSON.parse(saved) : [
-      { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', isbn: '9780743273565', category: 'Classic', year: 1925, quantity: 3, available: 2 },
-      { id: 2, title: 'To Kill a Mockingbird', author: 'Harper Lee', isbn: '9780061120084', category: 'Classic', year: 1960, quantity: 4, available: 3 },
-      { id: 3, title: '1984', author: 'George Orwell', isbn: '9780451524935', category: 'Science Fiction', year: 1949, quantity: 5, available: 4 },
-      { id: 4, title: 'Pride and Prejudice', author: 'Jane Austen', isbn: '9780141439518', category: 'Romance', year: 1813, quantity: 2, available: 2 },
-      { id: 5, title: 'The Catcher in the Rye', author: 'J.D. Salinger', isbn: '9780316769174', category: 'Classic', year: 1951, quantity: 3, available: 1 },
+      { id: 1, title: 'The Guide', author: 'R.K. Narayan', isbn: '9780143039648', category: 'Fiction', year: 1958, quantity: 4, available: 3 },
+      { id: 2, title: 'The God of Small Things', author: 'Arundhati Roy', isbn: '9780812979657', category: 'Fiction', year: 1997, quantity: 5, available: 4 },
+      { id: 3, title: 'Midnight\'s Children', author: 'Salman Rushdie', isbn: '9780099578512', category: 'Fiction', year: 1981, quantity: 3, available: 2 },
+      { id: 4, title: 'Wings of Fire', author: 'A.P.J. Abdul Kalam', isbn: '9788173711466', category: 'Biography', year: 1999, quantity: 6, available: 5 },
+      { id: 5, title: 'Train to Pakistan', author: 'Khushwant Singh', isbn: '9780143065883', category: 'Historical Fiction', year: 1956, quantity: 3, available: 2 },
+      { id: 6, title: 'The White Tiger', author: 'Aravind Adiga', isbn: '9781416562597', category: 'Fiction', year: 2008, quantity: 4, available: 3 },
+      { id: 7, title: 'Gitanjali', author: 'Rabindranath Tagore', isbn: '9788129119704', category: 'Poetry', year: 1910, quantity: 2, available: 2 },
     ];
   });
 
@@ -27,10 +29,11 @@ function App() {
   const [members, setMembers] = useState(() => {
     const saved = localStorage.getItem('members');
     return saved ? JSON.parse(saved) : [
-      { id: 1, name: 'John Doe', memberId: 'MEM001', email: 'john@example.com', phone: '555-0101', joinDate: '2024-01-15' },
-      { id: 2, name: 'Jane Smith', memberId: 'MEM002', email: 'jane@example.com', phone: '555-0102', joinDate: '2024-02-20' },
-      { id: 3, name: 'Bob Johnson', memberId: 'MEM003', email: 'bob@example.com', phone: '555-0103', joinDate: '2024-03-10' },
-      { id: 4, name: 'Alice Williams', memberId: 'MEM004', email: 'alice@example.com', phone: '555-0104', joinDate: '2024-04-05' },
+      { id: 1, name: 'Rahul Sharma', memberId: 'MEM001', email: 'rahul.sharma@example.com', phone: '+91-98765-43210', joinDate: '2024-01-15' },
+      { id: 2, name: 'Priya Patel', memberId: 'MEM002', email: 'priya.patel@example.com', phone: '+91-98765-43211', joinDate: '2024-02-20' },
+      { id: 3, name: 'Arjun Kumar', memberId: 'MEM003', email: 'arjun.kumar@example.com', phone: '+91-98765-43212', joinDate: '2024-03-10' },
+      { id: 4, name: 'Sneha Reddy', memberId: 'MEM004', email: 'sneha.reddy@example.com', phone: '+91-98765-43213', joinDate: '2024-04-05' },
+      { id: 5, name: 'Vikram Singh', memberId: 'MEM005', email: 'vikram.singh@example.com', phone: '+91-98765-43214', joinDate: '2024-05-12' },
     ];
   });
 
@@ -39,9 +42,10 @@ function App() {
     const saved = localStorage.getItem('issuedBooks');
     return saved ? JSON.parse(saved) : [
       { id: 1, bookId: 1, memberId: 1, issueDate: '2024-01-20', dueDate: '2024-02-03', returnDate: null },
-      { id: 2, bookId: 3, memberId: 2, issueDate: '2024-01-25', dueDate: '2024-02-08', returnDate: null },
-      { id: 3, bookId: 5, memberId: 3, issueDate: '2023-12-15', dueDate: '2023-12-29', returnDate: null },
-      { id: 4, bookId: 5, memberId: 4, issueDate: '2024-01-01', dueDate: '2024-01-15', returnDate: null },
+      { id: 2, bookId: 4, memberId: 2, issueDate: '2024-01-25', dueDate: '2024-02-08', returnDate: null },
+      { id: 3, bookId: 3, memberId: 3, issueDate: '2023-12-15', dueDate: '2023-12-29', returnDate: null },
+      { id: 4, bookId: 6, memberId: 4, issueDate: '2024-01-01', dueDate: '2024-01-15', returnDate: null },
+      { id: 5, bookId: 5, memberId: 5, issueDate: '2025-12-20', dueDate: '2026-01-03', returnDate: null },
     ];
   });
 

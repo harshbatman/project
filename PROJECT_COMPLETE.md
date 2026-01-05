@@ -265,9 +265,9 @@ Three comprehensive guides are included:
 
 The app comes pre-loaded with sample data:
 
-- **5 Books**: Classic literature titles
-- **4 Members**: Sample library members
-- **4 Issued Books**: Including overdue examples
+- **7 Books**: Indian authors including R.K. Narayan, Arundhati Roy, A.P.J. Abdul Kalam, Rabindranath Tagore, and more
+- **5 Members**: Sample Indian student names with Indian phone numbers
+- **5 Issued Books**: Including overdue examples
 
 You can:
 - Use this data to explore features

@@ -1,6 +1,6 @@
 # eLibrary - Book Management System
 
-A modern, responsive web application for managing library operations including books, members, and borrowing records.
+A modern, responsive web application for managing library operations in Indian schools, colleges, and institutions. Features Indian authors, books, and localized data.
 
 ![eLibrary](https://img.shields.io/badge/Library-Management-blue)
 ![React](https://img.shields.io/badge/React-18-61DAFB)
