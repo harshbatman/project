@@ -13,19 +13,24 @@ function App() {
 
   // State for books
   const [books, setBooks] = useState(() => {
-    const saved = localStorage.getItem('books_v4');
+    const saved = localStorage.getItem('books_v5');
     return saved ? JSON.parse(saved) : [
       { id: 1, title: 'Physics Class 12', author: 'H.C. Verma', isbn: '9788177091878', category: 'Science', year: 2024, quantity: 3, available: 2 },
       { id: 2, title: 'Chemistry Class 12', author: 'O.P. Tandon', isbn: '9788193836125', category: 'Science', year: 2024, quantity: 3, available: 2 },
       { id: 3, title: 'Mathematics Class 12', author: 'R.D. Sharma', isbn: '9788193663004', category: 'Mathematics', year: 2024, quantity: 2, available: 1 },
       { id: 4, title: 'Biology Class 12', author: 'Trueman', isbn: '9788187223788', category: 'Science', year: 2024, quantity: 2, available: 1 },
       { id: 5, title: 'Human Anatomy', author: 'B.D. Chaurasia', isbn: '9788123923307', category: 'Medical', year: 2023, quantity: 2, available: 1 },
+      { id: 6, title: 'PYQ Physics Class 12', author: 'Arihant Experts', isbn: '9789313195000', category: 'Question Bank', year: 2025, quantity: 2, available: 2 },
+      { id: 7, title: 'PYQ Chemistry Class 12', author: 'MTG Editorial', isbn: '9789389500000', category: 'Question Bank', year: 2025, quantity: 2, available: 2 },
+      { id: 8, title: 'PYQ Biology Class 12', author: 'Oswaal Books', isbn: '9789354000000', category: 'Question Bank', year: 2025, quantity: 2, available: 2 },
+      { id: 9, title: 'PYQ Human Anatomy', author: 'Vishram Singh', isbn: '9788131200000', category: 'Medical', year: 2024, quantity: 2, available: 2 },
+      { id: 10, title: 'PYQ Organic Chemistry', author: 'Himanshu Pandey', isbn: '9788131500000', category: 'Science', year: 2024, quantity: 2, available: 2 },
     ];
   });
 
   // State for members
   const [members, setMembers] = useState(() => {
-    const saved = localStorage.getItem('members_v4');
+    const saved = localStorage.getItem('members_v5');
     return saved ? JSON.parse(saved) : [
       { id: 1, name: 'Aadhya Gupta', memberId: 'MEM001', email: 'aadhya.gupta@example.com', phone: '+91-98765-43210', joinDate: '2024-01-15' },
       { id: 2, name: 'Priya Patel', memberId: 'MEM002', email: 'priya.patel@example.com', phone: '+91-98765-43211', joinDate: '2024-02-20' },
@@ -37,7 +42,7 @@ function App() {
 
   // State for issued books
   const [issuedBooks, setIssuedBooks] = useState(() => {
-    const saved = localStorage.getItem('issuedBooks_v4');
+    const saved = localStorage.getItem('issuedBooks_v5');
     return saved ? JSON.parse(saved) : [
       { id: 1, bookId: 1, memberId: 1, issueDate: '2025-11-01', dueDate: '2025-12-01', returnDate: null },
       { id: 2, bookId: 2, memberId: 2, issueDate: '2025-11-05', dueDate: '2025-12-05', returnDate: null },
@@ -49,7 +54,7 @@ function App() {
 
   // Current user state
   const [currentUser, setCurrentUser] = useState(() => {
-    const saved = localStorage.getItem('currentUser_v4');
+    const saved = localStorage.getItem('currentUser_v5');
     return saved ? JSON.parse(saved) : {
       name: 'Prakriti Kumari',
       role: 'Admin',
@@ -59,19 +64,19 @@ function App() {
 
   // Save to localStorage whenever state changes
   useEffect(() => {
-    localStorage.setItem('books_v4', JSON.stringify(books));
+    localStorage.setItem('books_v5', JSON.stringify(books));
   }, [books]);
 
   useEffect(() => {
-    localStorage.setItem('members_v4', JSON.stringify(members));
+    localStorage.setItem('members_v5', JSON.stringify(members));
   }, [members]);
 
   useEffect(() => {
-    localStorage.setItem('issuedBooks_v4', JSON.stringify(issuedBooks));
+    localStorage.setItem('issuedBooks_v5', JSON.stringify(issuedBooks));
   }, [issuedBooks]);
 
   useEffect(() => {
-    localStorage.setItem('currentUser_v4', JSON.stringify(currentUser));
+    localStorage.setItem('currentUser_v5', JSON.stringify(currentUser));
   }, [currentUser]);
 
   // Toast helper functions
