@@ -15,13 +15,13 @@ function App() {
   const [books, setBooks] = useState(() => {
     const saved = localStorage.getItem('books');
     return saved ? JSON.parse(saved) : [
-      { id: 1, title: 'The Guide', author: 'R.K. Narayan', isbn: '9780143039648', category: 'Fiction', year: 1958, quantity: 4, available: 3 },
-      { id: 2, title: 'The God of Small Things', author: 'Arundhati Roy', isbn: '9780812979657', category: 'Fiction', year: 1997, quantity: 5, available: 4 },
-      { id: 3, title: 'Midnight\'s Children', author: 'Salman Rushdie', isbn: '9780099578512', category: 'Fiction', year: 1981, quantity: 3, available: 2 },
-      { id: 4, title: 'Wings of Fire', author: 'A.P.J. Abdul Kalam', isbn: '9788173711466', category: 'Biography', year: 1999, quantity: 6, available: 5 },
-      { id: 5, title: 'Train to Pakistan', author: 'Khushwant Singh', isbn: '9780143065883', category: 'Historical Fiction', year: 1956, quantity: 3, available: 2 },
-      { id: 6, title: 'The White Tiger', author: 'Aravind Adiga', isbn: '9781416562597', category: 'Fiction', year: 2008, quantity: 4, available: 3 },
-      { id: 7, title: 'Gitanjali', author: 'Rabindranath Tagore', isbn: '9788129119704', category: 'Poetry', year: 1910, quantity: 2, available: 2 },
+      { id: 1, title: 'The God of Small Things', author: 'Arundhati Roy', isbn: '9780812979657', category: 'Fiction', year: 1997, quantity: 5, available: 4 },
+      { id: 2, title: 'Interpreter of Maladies', author: 'Jhumpa Lahiri', isbn: '9780395927205', category: 'Short Stories', year: 1999, quantity: 4, available: 3 },
+      { id: 3, title: 'The Palace of Illusions', author: 'Chitra Banerjee Divakaruni', isbn: '9781400096206', category: 'Mythology', year: 2008, quantity: 6, available: 5 },
+      { id: 4, title: 'Fasting, Feasting', author: 'Anita Desai', isbn: '9780618065820', category: 'Fiction', year: 1999, quantity: 3, available: 2 },
+      { id: 5, title: 'The Inheritance of Loss', author: 'Kiran Desai', isbn: '9780802142818', category: 'Fiction', year: 2006, quantity: 4, available: 3 },
+      { id: 6, title: 'Difficult Daughters', author: 'Manju Kapur', isbn: '9780571192892', category: 'Historical Fiction', year: 1998, quantity: 3, available: 3 },
+      { id: 7, title: 'Namesake', author: 'Jhumpa Lahiri', isbn: '9780618485222', category: 'Fiction', year: 2003, quantity: 5, available: 4 },
     ];
   });
 
@@ -29,11 +29,11 @@ function App() {
   const [members, setMembers] = useState(() => {
     const saved = localStorage.getItem('members');
     return saved ? JSON.parse(saved) : [
-      { id: 1, name: 'Rahul Sharma', memberId: 'MEM001', email: 'rahul.sharma@example.com', phone: '+91-98765-43210', joinDate: '2024-01-15' },
+      { id: 1, name: 'Aadhya Gupta', memberId: 'MEM001', email: 'aadhya.gupta@example.com', phone: '+91-98765-43210', joinDate: '2024-01-15' },
       { id: 2, name: 'Priya Patel', memberId: 'MEM002', email: 'priya.patel@example.com', phone: '+91-98765-43211', joinDate: '2024-02-20' },
-      { id: 3, name: 'Arjun Kumar', memberId: 'MEM003', email: 'arjun.kumar@example.com', phone: '+91-98765-43212', joinDate: '2024-03-10' },
+      { id: 3, name: 'Diya Sharma', memberId: 'MEM003', email: 'diya.sharma@example.com', phone: '+91-98765-43212', joinDate: '2024-03-10' },
       { id: 4, name: 'Sneha Reddy', memberId: 'MEM004', email: 'sneha.reddy@example.com', phone: '+91-98765-43213', joinDate: '2024-04-05' },
-      { id: 5, name: 'Vikram Singh', memberId: 'MEM005', email: 'vikram.singh@example.com', phone: '+91-98765-43214', joinDate: '2024-05-12' },
+      { id: 5, name: 'Kavya Singh', memberId: 'MEM005', email: 'kavya.singh@example.com', phone: '+91-98765-43214', joinDate: '2024-05-12' },
     ];
   });
 
@@ -53,9 +53,9 @@ function App() {
   const [currentUser, setCurrentUser] = useState(() => {
     const saved = localStorage.getItem('currentUser');
     return saved ? JSON.parse(saved) : {
-      name: 'Admin User',
+      name: 'Ananya Verma',
       role: 'Admin',
-      avatar: 'AU'
+      avatar: 'AV'
     };
   });
 
