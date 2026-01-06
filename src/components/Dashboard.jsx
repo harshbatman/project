@@ -158,8 +158,8 @@ function Dashboard({ getStats, books, members, issuedBooks }) {
                                     <span className="badge badge-primary">{members.length}</span>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                    <span style={{ fontWeight: 500 }}>Total Book Titles</span>
-                                    <span className="badge badge-primary">{books.length}</span>
+                                    <span style={{ fontWeight: 500 }}>Total Books</span>
+                                    <span className="badge badge-primary">{stats.totalBooks}</span>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                     <span style={{ fontWeight: 500 }}>Books In Circulation</span>
