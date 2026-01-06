@@ -42,7 +42,7 @@ function Dashboard({ getStats, books, members, issuedBooks }) {
                         <div className="stat-header">
                             <div>
                                 <div className="stat-value">{stats.availableBooks}</div>
-                                <div className="stat-label">Available Books</div>
+                                <div className="stat-label">Books Available</div>
                             </div>
                             <div className="stat-icon">✅</div>
                         </div>
@@ -52,7 +52,7 @@ function Dashboard({ getStats, books, members, issuedBooks }) {
                         <div className="stat-header">
                             <div>
                                 <div className="stat-value">{stats.issuedCount}</div>
-                                <div className="stat-label">Issued Books</div>
+                                <div className="stat-label">Books Issued</div>
                             </div>
                             <div className="stat-icon">📤</div>
                         </div>
@@ -62,7 +62,7 @@ function Dashboard({ getStats, books, members, issuedBooks }) {
                         <div className="stat-header">
                             <div>
                                 <div className="stat-value">{stats.overdueCount}</div>
-                                <div className="stat-label">Overdue Returns</div>
+                                <div className="stat-label">Books Overdue</div>
                             </div>
                             <div className="stat-icon">⚠️</div>
                         </div>
