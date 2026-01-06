@@ -151,6 +151,12 @@ function App() {
 
   return (
     <div className="app-container">
+      {/* Mobile Header (Visible only on mobile) */}
+      <div className="mobile-header">
+        <div className="mobile-header-icon">📚</div>
+        <div className="mobile-header-title">eLibrary</div>
+      </div>
+
       {/* Mobile Sidebar Overlay */}
       <div
         className={`sidebar-overlay ${mobileMenuOpen ? 'visible' : ''}`}
